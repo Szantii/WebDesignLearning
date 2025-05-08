@@ -4,6 +4,30 @@
 <html> <!--Elemnto raíz del documento. Define todo el documento como HTML-->
 
 
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #ep1 {
+      background-color: hsla(40, 100%, 50%, 0.8);
+       color: navy;
+    }
+    #eh1 {
+      color: rgba(85, 183, 244, 1);
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 300%;
+      border: 3px dashed bisque;
+      margin: 1px;
+    }
+    #ep3 {
+      border: 3px dotted magenta;
+      background-color: lime;
+      padding: 15px;
+      margin: 37px;
+    }
+  </style>
+</head>
+
+
 <body> <!--Define el cuerpo del documento-->
 
 
@@ -83,5 +107,12 @@
 <p style="color: rgb(0, 0, 255)">Blue color paragraph text.</p> <!--Definir un color de relleno para el elemento.-->
 <p style="border: 2px solid #00af07;">Paragraph element with colored border.</p>
 
+
+<!--Aplicar diseño a un documento con CSS.-->
+<p style="padding-top: 20px; background-color: lightblue;">Paragraph with CSS inline.</p> <!--Cuando se usa la propiedad 'style' dentro de la etiqueta significa que CSS fue aplicado en esa única línea.-->
+<p id="ep1">Paragraph with internal CSS.</p> <!--Se usa un elemento 'style' como contexto del elemento 'head' para definir el diseño de toda la página. Se usa un 'id' para que solo afecte este elemento.-->
+<p id="ep2">Paragraph with external CSS.</p> <!--Se usa un elemento 'link' como contexto del elemento 'head' para definir el diseño de esta página. Se usa un 'id' para que solo afecte este elemento.-->
+<h3 id="eh1">Heading with multiple properties.</h3> <!--Elemento afectado por las propiedades comunes definidas en la etiqueta 'style' con identificador 'eh1'.-->
+<p id="ep3">Paragraph with multiple properties.</p> <!--Elemento afectado por las propiedades comunes definidas en la etiqueta'style' con identificador 'ep3'.-->
 </body>
 </html>
