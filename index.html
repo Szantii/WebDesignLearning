@@ -116,13 +116,13 @@
 
 <!-- Enlazar una página web u otro documento HTML. -->
 <a href="">Link text. Click me!</a> <!-- Esta etiqueta permite redirigir al lector a otras páginas. El atributo 'href' indica la ruta de destino. Entre la apertura y el cierre de la etiqueta puede escribirse un texto visible sobre el que se hará clic. --> <br>
-<a href="" target="_blank">Click here to open in a new tab.</a> <!-- Esta es la primera etiqueta en el documento que puede ir acompañada de dos atributos. El atributo target determina donde se abrirá la página del enlace. -->
+<a href="" target="_blank">Click here to open in a new tab.</a> <!-- Esta es la primera etiqueta en el documento que puede ir acompañada de dos atributos o más. El atributo target determina donde se abrirá la página del enlace. En este caso, en una página nueva. -->
 <p>Click the next icons to go to that website.</p>
 <a href="https://m.facebook.com/">
-  <img src="/Imágenes/Facebook-Logo.png" alt="Facebook" style="width:40px; height:40px;"> <!-- Se usan etiquetas 'img' entre la apertura y cierre de la etiqueta 'a' para colocar una imagen que tendrá un hiperenlace. -->
+  <img src="/Imágenes/Facebook-Logo.png" alt="Facebook" style="width:40px; height:40px;"> <!-- Se usa una etiqueta 'img' entre la apertura y cierre de la etiqueta 'a' para colocar una imagen que funcionará como hiperenlace. -->
 </a>
 <a href="https://www.google.com/">
-  <img src="/Imágenes/Google-Logo.png" alt="Google" style="width:40px; height: 40px;"> <!-- Nota que se aplica un estilo en la misma línea, tal y como se observa en la lección anterior de aplicar diseños.-->
+  <img src="/Imágenes/Google-Logo.png" alt="Google" style="width:40px; height: 40px;"> <!-- Nota que se aplica un estilo en la misma línea, tal y como se observa en la lección anterior de aplicar diseños. Se ajusta el tamaño de la imagen tanto vertical como horizontalmente.-->
 </a>
 <a href="https://www.youtube.com/" title="Go to YouTube's main page"> <!-- El atributo 'title' permite mostrar un mensaje al tener el cursor sobre el enlace sin darle clic. -->
   <img src="/Imágenes/YouTube-Logo.png" alt="YouTube" style="width:40px; height: 40px;">
@@ -130,8 +130,15 @@
 <a href="https://co.linkedin.com/">
   <img src="/Imágenes/LinkedIn-Logo.png" alt="LinkedIn" style="width:40px; height: 40px;">
 </a><br><br>
-<a href="mailto:someone@example.com">Click here to send an email</a><br><br>
+<a href="mailto:someone@example.com">Click here to send an email to someone@example.com.</a><br>
+<a href="tel:+1123456789">Click here to contact the +1 123 456 789 user's phone number.</a><br>
+<a href="sms:+1523456789">Click here to send a message to +15 234 56 789 user's phone number.</a><br><br>
 <button onclick="document.location=''">Click on me</button> <!-- Botón inhábil. Este botón contiene sintaxis de JavaScript para redirigir al usuario. -->
 
+<!-- La etiqueta <a> cuenta con otros atributos como:
+download: Permite descargar un archivo haciendo clic en el hiperenlace.
+hreflang: Permite definir el lenguaje por defecto del documento o página enlazada.
+media: Permite especificar los dispositivos en los que se puede abrir el documento.
+-->
 </body>
 </html>
