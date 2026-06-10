@@ -1,6 +1,6 @@
-<!DOCTYPE html> <!-- Inicio de un documento html. -->
+<!DOCTYPE html> <!-- Inicio de un documento html definiendo su tipo. -->
 
-<html> <!-- Elemento raíz del documento. Define todo el documento como HTML. -->
+<html> <!-- Elemento raíz del documento. Inicia todo el documento si está definido como HTML. -->
 
 <head>
   <link rel="stylesheet" href="style.css">
@@ -65,7 +65,7 @@
 <p><b>This is a bold text paragraph.</b></p> <!-- Esta etiqueta hace el texto negrita. -->
 <p><strong>This is also a bold text paragraph, but more important.</strong></p> <!-- Esta etiqueta hace el texto negrita pero el contenido es más importante. -->
 <p><i>This paragraph is in italic style.</i></p> <!-- Esta etiqueta hace el texto itálico. Se usa para indicar términos técnicos, frases en otros idiomas, pensamientos, etc. -->
-<p><em>This is also in italic style but it's emphasized.</em></p> <!-- Esta etiqueta hace el texto itálico pero le da más importancia. -->
+<p><em>This is also in italic style but it's emphasized.</em></p> <!-- Esta etiqueta hace el texto itálico pero le da más énfasis. -->
 <p><dfn>This is a "dfn" tag and displays text in italic, too.</dfn></p> <!-- Esta etiqueta hace el texto itálico. Se usa cuando se quiere explicar el término que está dentro de la misma. -->
 <p><small>This is a small paragraph.</small></p> <!-- Esta etiqueta hace el texto pequeño y se aplica cuando un trabajo tiene copyright o comentarios secundarios. -->
 <p><mark>This is a highlighted paragraph text.</mark></p> <!-- Esta etiqueta resalta el texto. -->
@@ -95,7 +95,7 @@
 <p>The source must be cited inside the tag.</p>
 <p>The q tag <q>makes quoted text be quoted</q>.</p> <!-- Esta etiqueta hace que el texto dentro se vuelva una cita. -->
 <p>There are plenty words that are abbreviated constantly, for example <abbr title="Not Gonna Lie">NGL</abbr> stands for "Not Gonna Lie" in English.</p> <!-- Esta etiqueta permite declarar las abreviaciones o acrónimos de las palabras. -->
-<p><address>Written by Santiago.<br>Av. 26 - 110, Nuevo México<br>Brazil</address></p> <!-- Esta etiqueta permite definir la información del autor o propietario de un documento o un artículo como correos electrónicos, URLs, direcciones físicas, números telefónicos, entre otros. El contenido se muestra en estilo itálico. -->
+<address>Written by Santiago.<br>Av. 26 - 110, Nuevo México<br>Brazil</address> <!-- Esta etiqueta permite definir la información del autor o propietario de un documento o un artículo como correos electrónicos, URLs, direcciones físicas, números telefónicos, entre otros. El contenido se muestra en estilo itálico. -->
 <p><cite>War of the Worlds.</cite></p> <!-- Esta etiqueta hace el texto itálico. Se usa para citar el nombre de un trabajo creativo. -->
 <bdo dir="rtl">Right-to-left text direction.</bdo> <!-- Esta etiqueta indica un cambio en la dirección actual del texto. Generalmente, esta etiqueta va acompañada de la propiedad "dir" cuyos valores permiten el cambio de dirección. -->
 
@@ -111,7 +111,7 @@
 <p id="ep1">Paragraph with internal CSS.</p> <!-- Se usa un elemento 'style' como contexto del elemento 'head' para definir el diseño de toda la página. Se usa un 'id' para que solo afecte este elemento. -->
 <p id="ep2">Paragraph with external CSS.</p> <!-- Se usa un elemento 'link' como contexto del elemento 'head' para definir el diseño de esta página. Se usa un 'id' para que solo afecte este elemento. -->
 <h3 id="eh1">Heading with multiple properties.</h3> <!-- Elemento afectado por las propiedades comunes definidas en la etiqueta 'style' con identificador 'eh1'. -->
-<p id="ep3">Paragraph with multiple properties.</p> <!-- Elemento afectado por las propiedades comunes definidas en la etiqueta'style' con identificador 'ep3'. -->
+<p id="ep3">Paragraph with multiple properties.</p> <!-- Elemento afectado por las propiedades comunes definidas en la etiqueta 'style' con identificador 'ep3'. -->
 
 
 <!-- Enlazar una página web u otro documento HTML. -->
@@ -119,21 +119,21 @@
 <a href="" target="_blank">Click here to open in a new tab.</a> <!-- Esta es la primera etiqueta en el documento que puede ir acompañada de dos atributos o más. El atributo target determina donde se abrirá la página del enlace. En este caso, en una página nueva. -->
 <p>Click the next icons to go to that website.</p>
 <a href="https://m.facebook.com/">
-  <img src="/Imágenes/Facebook-Logo.png" alt="Facebook" style="width:40px; height:40px;"> <!-- Se usa una etiqueta 'img' entre la apertura y cierre de la etiqueta 'a' para colocar una imagen que funcionará como hiperenlace. -->
+  <img src="/Imágenes/Enlaces/Facebook-Logo.png" alt="Facebook" style="width:40px; height:40px;"> <!-- Se usa una etiqueta 'img' entre la apertura y cierre de la etiqueta 'a' para colocar una imagen que funcionará como hiperenlace. -->
 </a>
 <a href="https://www.google.com/">
-  <img src="/Imágenes/Google-Logo.png" alt="Google" style="width:40px; height: 40px;"> <!-- Nota que se aplica un estilo en la misma línea, tal y como se observa en la lección anterior de aplicar diseños. Se ajusta el tamaño de la imagen tanto vertical como horizontalmente.-->
+  <img src="/Imágenes/Enlaces/Google-Logo.png" alt="Google" style="width:40px; height:40px;"> <!-- Nota que se aplica un estilo en la misma línea, tal y como se observa en la lección anterior de aplicar diseños con el que se ajusta el tamaño de la imagen tanto vertical como horizontalmente.-->
 </a>
 <a href="https://www.youtube.com/" title="Go to YouTube's main page"> <!-- El atributo 'title' permite mostrar un mensaje al tener el cursor sobre el enlace sin darle clic. -->
-  <img src="/Imágenes/YouTube-Logo.png" alt="YouTube" style="width:40px; height: 40px;">
+  <img src="/Imágenes/Enlaces/YouTube-Logo.png" alt="YouTube" style="width:40px; height:40px;">
 </a>
 <a href="https://www.linkedin.com/">
-  <img src="/Imágenes/LinkedIn-Logo.png" alt="LinkedIn" style="width:40px; height: 40px;">
+  <img src="/Imágenes/Enlaces/LinkedIn-Logo.png" alt="LinkedIn" style="width:40px; height:40px;">
 </a><br><br>
 <a href="mailto:someone@example.com">Click here to send an email to someone@example.com.</a><br>
 <a href="tel:+1123456789">Click here to contact the +1 123 456 789 user's phone number.</a><br>
 <a href="sms:+1523456789">Click here to send a message to +15 234 56 789 user's phone number.</a><br><br>
-<button onclick="document.location=''">Click on me</button> <!-- Botón inhábil. Este botón contiene sintaxis de JavaScript para redirigir al usuario. -->
+<button style="margin-bottom:1.3em;" onclick="document.location=''">Click on me</button> <!-- Botón inhábil. Este botón contiene sintaxis de JavaScript para redirigir al usuario. --> <hr>
 
 <!-- La etiqueta <a> cuenta con otros atributos como:
 download: Permite descargar un archivo haciendo clic en el hiperenlace.
@@ -145,6 +145,18 @@ rel: Permite definir la relación entre el documento actual y el documento enlaz
 type: Permite definir el tipo de contenido del documento enlazado. -->
 
 
+<!-- Usar imágenes para embellecer el documento. -->
+<img src="Imágenes/Imágenes/F1-Sport-Car.jpg" alt="F1 Sport Car"> <!-- Esta etiqueta permite mostrarle al usuario una imagen que se acopla a la página web. -->
+<img src="Imágenes/Imágenes/Pomeranian.jpg" alt="Pomeranian"> <!-- Los atributos 'src' y 'alt' permiten definir la ruta de la imagen y un nombre alterno en caso de que la ruta falle o se haga uso de un lector de pantalla. -->
+<img src="Imágenes/Imágenes/Yellow-Fork.jpg" alt="Yellow Fork" style="width:250px; height:250px;"> <!-- Esta etiqueta usa un atributo 'style' para definir el tamaño de la imagen. Así es menos propenso a ser modificado por otras hojas de estilo. -->
+<img src="Imágenes/Imágenes/Yellow-Fork.jpg" alt="Yellow Fork" width="250px" height="250px"> <!-- Esta etiqueta usa los atributos 'width' y 'height' para definir el tamaño de la imagen. De esta manera, es más propenso a ser modificado por otras hojas de estilo. -->
+<img src="Imágenes/Imágenes/Planet's-Orbit.gif" alt="Pixel art gif about things orbiting a planet."> <!-- También se le pueden mostrar archivos .gif al lector. --><br>
+<img src="Imágenes/Imágenes/Landscape.jpg" alt="A woman doing yoga in a landscape." style="width:300px; height:300px; float: left;"> <!-- Se usa la propiedad 'float' de CSS para mover la imagen a la izquierda (Por defecto) o a la derecha. -->
+<img src="Imágenes/Imágenes/Landscape.jpg" alt="A woman doing yoga in a landscape." style="width:300px; height:300px; float: right;"> <!-- Imagen organizada a la derecha con la propiedad 'float' de CSS. -->
+<img src="Imágenes/Imágenes/Image-Map.jpg" alt="A table in a café ocuppied with edibles, a pencil and a lotion bottle." usemap="" style="margin-top:10px;"> <!-- Se usa una imagen que contiene múltiples objetos que ocupan un hiperenlace. Se usa la propiedad 'usemap' para enlazar la imagen con el mapa mediante un nombre. -->
 
+<map name="">
+  <area shape="" coords="" href="" alt="">
+</map>
 </body>
 </html>
