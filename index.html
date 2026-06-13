@@ -153,10 +153,12 @@ type: Permite definir el tipo de contenido del documento enlazado. -->
 <img src="Imágenes/Imágenes/Planet's-Orbit.gif" alt="Pixel art gif about things orbiting a planet."> <!-- También se le pueden mostrar archivos .gif al lector. --><br>
 <img src="Imágenes/Imágenes/Landscape.jpg" alt="A woman doing yoga in a landscape." style="width:300px; height:300px; float: left;"> <!-- Se usa la propiedad 'float' de CSS para mover la imagen a la izquierda (Por defecto) o a la derecha. -->
 <img src="Imágenes/Imágenes/Landscape.jpg" alt="A woman doing yoga in a landscape." style="width:300px; height:300px; float: right;"> <!-- Imagen organizada a la derecha con la propiedad 'float' de CSS. -->
-<img src="Imágenes/Imágenes/Image-Map.jpg" alt="A table in a café ocuppied with edibles, a pencil and a lotion bottle." usemap="" style="margin-top:10px;"> <!-- Se usa una imagen que contiene múltiples objetos que ocupan un hiperenlace. Se usa la propiedad 'usemap' para enlazar la imagen con el mapa mediante un nombre. -->
+<img src="Imágenes/Imágenes/Image-Map.jpg" alt="A rectangle, a circle and a triangle each one next to the other shape." usemap="#example" style="margin-top:10px;"> <!-- Se usa una imagen que contiene múltiples objetos que ocupan un hiperenlace. Se usa la propiedad 'usemap' para enlazar la imagen con el mapa mediante un nombre. -->
 
-<map name="">
-  <area shape="" coords="" href="" alt="">
+<map name="example">
+  <area shape="rect" coords="22,58,119,236" href="#" alt="A rectangle. That's it.">
+  <area shape="circle" coords="199,147,50" href="#" alt="A circle. That's it.">
+  <area shape="poly" coords="323,94,268,194,378,194" href="#" alt="A triangle. That's it.">
 </map>
 </body>
 </html>
