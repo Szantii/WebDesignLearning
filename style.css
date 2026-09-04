@@ -8,3 +8,7 @@ body {
 #ep2 {
     border: 4px double rgba(89, 144, 62, 1);
 }
+
+table {
+    margin-bottom: 1em;
+}
